@@ -107,7 +107,7 @@ class App extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        const title = this.getState(['info','Персонаж'])
+        const title = this.getState(['info','character'])
             + '(lvl' + this.getClassTypeTotal('levels') + ') '
             + "v" + this.getState(['meta','rev'],0)
             + " / " + this.getState(['meta','prevChangeTime'],'');
@@ -568,10 +568,10 @@ function InfoRowImpl(props) {
                 <ColTextField {...props} propKey={['info','character']} xs={7} sm={6}/>
                 <ColTextField {...props} propKey={['info','player']} xs={3} sm={4}/>
                 <ColText label="Minify" xs={2} sm={2}>
-                    <Button
+                   <!-- <Button
                         bsSize="sm" bsStyle="info" target="_blank"
                         href="javascript:void(location.href='http://tinyurl.com/create.php?url='+encodeURIComponent(location.href))">
-                        tinyurl</Button>
+                        tinyurl</Button> -->
                 </ColText>
             </Row>
             <Row>
