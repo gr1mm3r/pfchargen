@@ -107,7 +107,7 @@ class App extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        const title = this.getState(['info','character'])
+        const title = this.getState(['info','Персонаж'])
             + '(lvl' + this.getClassTypeTotal('levels') + ') '
             + "v" + this.getState(['meta','rev'],0)
             + " / " + this.getState(['meta','prevChangeTime'],'');
